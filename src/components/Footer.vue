@@ -1,94 +1,82 @@
 <template>
-    <!-- Footer Start -->
-  <div class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5">
-    <div class="row pt-5">
-      <div class="col-lg-3 col-md-6 mb-5">
-        <a href="" class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0"
-          style="font-size: 40px; line-height: 40px">
-          <i class="flaticon-043-teddy-bear"></i>
-          <span class="text-white">KidKinder</span>
-        </a>
-        <p>
-          Labore dolor amet ipsum ea, erat sit ipsum duo eos. Volup amet ea
-          dolor et magna dolor, elitr rebum duo est sed diam elitr. Stet elitr
-          stet diam duo eos rebum ipsum diam ipsum elitr.
-        </p>
-        <div class="d-flex justify-content-start mt-4">
-          <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px"
-            href="#"><i class="fab fa-twitter"></i></a>
-          <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px"
-            href="#"><i class="fab fa-facebook-f"></i></a>
-          <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px"
-            href="#"><i class="fab fa-linkedin-in"></i></a>
-          <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px"
-            href="#"><i class="fab fa-instagram"></i></a>
+  <!-- Footer Section Begin -->
+  <footer class="footer spad">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="footer__about">
+            <div class="footer__about__logo">
+              <a href="./index.html"><img src="@/vendor/img/logo.png" alt=""></a>
+            </div>
+            <ul>
+              <li>Address: 60-49 Road 11378 New York</li>
+              <li>Phone: +65 11.188.888</li>
+              <li>Email: hello@colorlib.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+          <div class="footer__widget">
+            <h6>Useful Links</h6>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">About Our Shop</a></li>
+              <li><a href="#">Secure Shopping</a></li>
+              <li><a href="#">Delivery infomation</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Our Sitemap</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Who We Are</a></li>
+              <li><a href="#">Our Services</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Innovation</a></li>
+              <li><a href="#">Testimonials</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <div class="footer__widget">
+            <h6>Join Our Newsletter Now</h6>
+            <p>Get E-mail updates about our latest shop and special offers.</p>
+            <form action="#">
+              <input type="text" placeholder="Enter your mail">
+              <button type="submit" class="site-btn">Subscribe</button>
+            </form>
+            <div class="footer__widget__social">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-pinterest"></i></a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6 mb-5">
-        <h3 class="text-primary mb-4">Get In Touch</h3>
-        <div class="d-flex">
-          <h4 class="fa fa-map-marker-alt text-primary"></h4>
-          <div class="pl-3">
-            <h5 class="text-white">Address</h5>
-            <p>123 Street, New York, USA</p>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="footer__copyright">
+            <div class="footer__copyright__text">
+              <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy; {{ date }} All rights reserved | This template is made with <i class="fa fa-heart"
+                  aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            </div>
+            <div class="footer__copyright__payment"><img src="@/vendor/img/payment-item.png" alt=""></div>
           </div>
         </div>
-        <div class="d-flex">
-          <h4 class="fa fa-envelope text-primary"></h4>
-          <div class="pl-3">
-            <h5 class="text-white">Email</h5>
-            <p>info@example.com</p>
-          </div>
-        </div>
-        <div class="d-flex">
-          <h4 class="fa fa-phone-alt text-primary"></h4>
-          <div class="pl-3">
-            <h5 class="text-white">Phone</h5>
-            <p>+012 345 67890</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 mb-5">
-        <h3 class="text-primary mb-4">Quick Links</h3>
-        <div class="d-flex flex-column justify-content-start">
-          <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
-          <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
-          <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Classes</a>
-          <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Teachers</a>
-          <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Blog</a>
-          <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 mb-5">
-        <h3 class="text-primary mb-4">Newsletter</h3>
-        <form action="">
-          <div class="form-group">
-            <input type="text" class="form-control border-0 py-4" placeholder="Your Name" required />
-          </div>
-          <div class="form-group">
-            <input type="email" class="form-control border-0 py-4" placeholder="Your Email" required/>
-          </div>
-          <div>
-            <button class="btn btn-primary btn-block border-0 py-3" type="submit">
-              Submit Now
-            </button>
-          </div>
-        </form>
       </div>
     </div>
-    <div class="container-fluid pt-5" style="border-top: 1px solid rgba(23, 162, 184, 0.2) ;">
-      <p class="m-0 text-center text-white">
-        &copy;
-        <a class="text-primary font-weight-bold" href="#">Your Site Name</a>.
-        All Rights Reserved.
-
-        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-        Designed by
-        <a class="text-primary font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
-        <br />Distributed By:
-        <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
-      </p>
-    </div>
-  </div>
-  <!-- Footer End -->
+  </footer>
+  <!-- Footer Section End -->
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      date: new Date().getFullYear()
+    }
+  }
+}
+</script>
