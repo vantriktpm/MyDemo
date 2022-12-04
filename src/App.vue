@@ -3,204 +3,94 @@
 import Footer from './components/Footer.vue'
 </script>
 
+
 <template>
   <!-- Page Preloder -->
   <div id="preloder">
     <div class="loader"></div>
   </div>
 
-  <!-- Humberger Begin -->
-  <div class="humberger__menu__overlay"></div>
-  <div class="humberger__menu__wrapper">
-    <div class="humberger__menu__logo">
-      <a href="#"><img src="src/vendor/img/logo.png" alt=""></a>
-    </div>
-    <div class="humberger__menu__cart">
-      <ul>
-        <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-        <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
-      </ul>
-      <div class="header__cart__price">item: <span>$150.00</span></div>
-    </div>
-    <div class="humberger__menu__widget">
-      <div class="header__top__right__language">
-        <img src="src/vendor/img/language.png" alt="">
-        <div>English</div>
-        <span class="arrow_carrot-down"></span>
-        <ul>
-          <li><a href="#">Spanis</a></li>
-          <li><a href="#">English</a></li>
-        </ul>
-      </div>
-      <div class="header__top__right__auth">
-        <a href="#"><i class="fa fa-user"></i> Login</a>
-      </div>
-    </div>
-    <nav class="humberger__menu__nav mobile-menu">
-      <ul>
-        <li class="active"><a href="./index.html">Home</a></li>
-        <li><a href="./shop-grid.html">Shop</a></li>
-        <li><a href="#">Pages</a>
-          <ul class="header__menu__dropdown">
-            <li><a href="./shop-details.html">Shop Details</a></li>
-            <li><a href="./shoping-cart.html">Shoping Cart</a></li>
-            <li><a href="./checkout.html">Check Out</a></li>
-            <li><a href="./blog-details.html">Blog Details</a></li>
-          </ul>
-        </li>
-        <li><a href="./blog.html">Blog</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <div id="mobile-menu-wrap"></div>
-    <div class="header__top__right__social">
-      <a href="#"><i class="fa fa-facebook"></i></a>
-      <a href="#"><i class="fa fa-twitter"></i></a>
-      <a href="#"><i class="fa fa-linkedin"></i></a>
-      <a href="#"><i class="fa fa-pinterest-p"></i></a>
-    </div>
-    <div class="humberger__menu__contact">
-      <ul>
-        <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
-        <li>Free Shipping for all Order of $99</li>
-      </ul>
-    </div>
-  </div>
-  <!-- Humberger End -->
-
   <!-- Header Section Begin -->
   <header class="header">
-    <div class="header__top">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-6">
-            <div class="header__top__left">
-              <ul>
-                <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
-                <li>Free Shipping for all Order of $99</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6">
-            <div class="header__top__right">
-              <div class="header__top__right__social">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-                <a href="#"><i class="fa fa-pinterest-p"></i></a>
-              </div>
-              <div class="header__top__right__language">
-                <img src="src/vendor/img/language.png" alt="">
-                <div>English</div>
-                <span class="arrow_carrot-down"></span>
-                <ul>
-                  <li><a href="#">Spanis</a></li>
-                  <li><a href="#">English</a></li>
-                </ul>
-              </div>
-              <div class="header__top__right__auth">
-                <a href="#"><i class="fa fa-user"></i> Login</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="container">
       <div class="row">
-        <div class="col-lg-3">
+        <div class="col-lg-2">
           <div class="header__logo">
-            <a href="./index.html"><img src="src/vendor/img/logo.png" alt=""></a>
+            <a href="./index.html">
+              <img src="@/assets/img/logo.png" alt="">
+            </a>
           </div>
         </div>
-        <div class="col-lg-6">
-          <nav class="header__menu">
-            <ul>
-              <li class="active"><a href="./index.html">Home</a></li>
-              <li><a href="./shop-grid.html">Shop</a></li>
-              <li><a href="#">Pages</a>
-                <ul class="header__menu__dropdown">
-                  <li><a href="./shop-details.html">Shop Details</a></li>
-                  <li><a href="./shoping-cart.html">Shoping Cart</a></li>
-                  <li><a href="./checkout.html">Check Out</a></li>
-                  <li><a href="./blog-details.html">Blog Details</a></li>
-                </ul>
-              </li>
-              <li><a href="./blog.html">Blog</a></li>
-              <li><a href="./contact.html">Contact</a></li>
-            </ul>
-          </nav>
+        <div class="col-lg-8">
+          <div class="header__nav">
+            <nav class="header__menu mobile-menu">
+              <ul>
+                <li class="active"><a href="./index.html">Homepage</a></li>
+                <li><a href="./categories.html">Categories <span class="arrow_carrot-down"></span></a>
+                  <ul class="dropdown">
+                    <li><a href="./categories.html">Categories</a></li>
+                    <li><a href="./anime-details.html">Anime Details</a></li>
+                    <li><a href="./anime-watching.html">Anime Watching</a></li>
+                    <li><a href="./blog-details.html">Blog Details</a></li>
+                    <li><a href="./signup.html">Sign Up</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                  </ul>
+                </li>
+                <li><a href="./blog.html">Our Blog</a></li>
+                <li><a href="#">Contacts</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <div class="col-lg-3">
-          <div class="header__cart">
-            <ul>
-              <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-              <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
-            </ul>
-            <div class="header__cart__price">item: <span>$150.00</span></div>
+        <div class="col-lg-2">
+          <div class="header__right">
+            <a href="#" class="search-switch"><span class="icon_search"></span></a>
+            <a href="./login.html"><span class="icon_profile"></span></a>
           </div>
         </div>
       </div>
-      <div class="humberger__open">
-        <i class="fa fa-bars"></i>
-      </div>
+      <div id="mobile-menu-wrap"></div>
     </div>
   </header>
-  <!-- Header Section End -->
+  <!-- Header End -->
 
   <!-- Hero Section Begin -->
   <section class="hero">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-3">
-          <div class="hero__categories">
-            <div class="hero__categories__all">
-              <i class="fa fa-bars"></i>
-              <span>All departments</span>
+      <div class="hero__slider owl-carousel">
+        <div class="hero__items set-bg" data-setbg="@/assets/img/hero/hero-1.jpg">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="hero__text">
+                <div class="label">Adventure</div>
+                <h2>Fate / Stay Night: Unlimited Blade Works</h2>
+                <p>After 30 days of travel across the world...</p>
+                <a href="#"><span>Watch Now</span> <i class="fa fa-angle-right"></i></a>
+              </div>
             </div>
-            <ul>
-              <li><a href="#">Fresh Meat</a></li>
-              <li><a href="#">Vegetables</a></li>
-              <li><a href="#">Fruit & Nut Gifts</a></li>
-              <li><a href="#">Fresh Berries</a></li>
-              <li><a href="#">Ocean Foods</a></li>
-              <li><a href="#">Butter & Eggs</a></li>
-              <li><a href="#">Fastfood</a></li>
-              <li><a href="#">Fresh Onion</a></li>
-              <li><a href="#">Papayaya & Crisps</a></li>
-              <li><a href="#">Oatmeal</a></li>
-              <li><a href="#">Fresh Bananas</a></li>
-            </ul>
           </div>
         </div>
-        <div class="col-lg-9">
-          <div class="hero__search">
-            <div class="hero__search__form">
-              <form action="#">
-                <div class="hero__search__categories">
-                  All Categories
-                  <span class="arrow_carrot-down"></span>
-                </div>
-                <input type="text" placeholder="What do yo u need?">
-                <button type="submit" class="site-btn">SEARCH</button>
-              </form>
-            </div>
-            <div class="hero__search__phone">
-              <div class="hero__search__phone__icon">
-                <i class="fa fa-phone"></i>
-              </div>
-              <div class="hero__search__phone__text">
-                <h5>+65 11.188.888</h5>
-                <span>support 24/7 time</span>
+        <div class="hero__items set-bg" data-setbg="@/assets/img/hero/hero-1.jpg">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="hero__text">
+                <div class="label">Adventure</div>
+                <h2>Fate / Stay Night: Unlimited Blade Works</h2>
+                <p>After 30 days of travel across the world...</p>
+                <a href="#"><span>Watch Now</span> <i class="fa fa-angle-right"></i></a>
               </div>
             </div>
           </div>
-          <div class="hero__item set-bg" data-setbg="src/vendor/img/hero/banner.jpg">
-            <div class="hero__text">
-              <span>FRUIT FRESH</span>
-              <h2>Vegetable <br />100% Organic</h2>
-              <p>Free Pickup and Delivery Available</p>
-              <a href="#" class="primary-btn">SHOP NOW</a>
+        </div>
+        <div class="hero__items set-bg" data-setbg="@/assets/img/hero/hero-1.jpg">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="hero__text">
+                <div class="label">Adventure</div>
+                <h2>Fate / Stay Night: Unlimited Blade Works</h2>
+                <p>After 30 days of travel across the world...</p>
+                <a href="#"><span>Watch Now</span> <i class="fa fa-angle-right"></i></a>
+              </div>
             </div>
           </div>
         </div>
@@ -209,473 +99,580 @@ import Footer from './components/Footer.vue'
   </section>
   <!-- Hero Section End -->
 
-  <!-- Categories Section Begin -->
-  <section class="categories">
+  <!-- Product Section Begin -->
+  <section class="product spad">
     <div class="container">
       <div class="row">
-        <div class="categories__slider owl-carousel">
-          <div class="col-lg-3">
-            <div class="categories__item set-bg" data-setbg="src/vendor/img/categories/cat-1.jpg">
-              <h5><a href="#">Fresh Fruit</a></h5>
+        <div class="col-lg-8">
+          <div class="trending__product">
+            <div class="row">
+              <div class="col-lg-8 col-md-8 col-sm-8">
+                <div class="section-title">
+                  <h4>Trending Now</h4>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="btn__all">
+                  <a href="#" class="primary-btn">View All <span class="arrow_right"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg" data-setbg="@/assets/img/trending/trend-1.jpg">
+                    <div class="ep">18 / 18</div>
+                    <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                    <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                  </div>
+                  <div class="product__item__text">
+                    <ul>
+                      <li>Active</li>
+                      <li>Movie</li>
+                    </ul>
+                    <h5><a href="#">The Seven Deadly Sins: Wrath of the Gods</a></h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg" data-setbg="@/assets/img/trending/trend-2.jpg">
+                    <div class="ep">18 / 18</div>
+                    <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                    <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                  </div>
+                  <div class="product__item__text">
+                    <ul>
+                      <li>Active</li>
+                      <li>Movie</li>
+                    </ul>
+                    <h5><a href="#">Gintama Movie 2: Kanketsu-hen - Yorozuya yo Eien</a></h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg" data-setbg="@/assets/img/trending/trend-3.jpg">
+                    <div class="ep">18 / 18</div>
+                    <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                    <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                  </div>
+                  <div class="product__item__text">
+                    <ul>
+                      <li>Active</li>
+                      <li>Movie</li>
+                    </ul>
+                    <h5><a href="#">Shingeki no Kyojin Season 3 Part 2</a></h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg" data-setbg="@/assets/img/trending/trend-4.jpg">
+                    <div class="ep">18 / 18</div>
+                    <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                    <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                  </div>
+                  <div class="product__item__text">
+                    <ul>
+                      <li>Active</li>
+                      <li>Movie</li>
+                    </ul>
+                    <h5><a href="#">Fullmetal Alchemist: Brotherhood</a></h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg" data-setbg="@/assets/img/trending/trend-5.jpg">
+                    <div class="ep">18 / 18</div>
+                    <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                    <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                  </div>
+                  <div class="product__item__text">
+                    <ul>
+                      <li>Active</li>
+                      <li>Movie</li>
+                    </ul>
+                    <h5><a href="#">Shiratorizawa Gakuen Koukou</a></h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg" data-setbg="@/assets/img/trending/trend-6.jpg">
+                    <div class="ep">18 / 18</div>
+                    <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                    <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                  </div>
+                  <div class="product__item__text">
+                    <ul>
+                      <li>Active</li>
+                      <li>Movie</li>
+                    </ul>
+                    <h5><a href="#">Code Geass: Hangyaku no Lelouch R2</a></h5>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-3">
-            <div class="categories__item set-bg" data-setbg="src/vendor/img/categories/cat-2.jpg">
-              <h5><a href="#">Dried Fruit</a></h5>
+          <div class="popular__product">
+            <div class="row">
+              <div class="col-lg-8 col-md-8 col-sm-8">
+                <div class="section-title">
+                  <h4>Popular Shows</h4>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="btn__all">
+                  <a href="#" class="primary-btn">View All <span class="arrow_right"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg" data-setbg="@/assets/img/popular/popular-1.jpg">
+                    <div class="ep">18 / 18</div>
+                    <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                    <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                  </div>
+                  <div class="product__item__text">
+                    <ul>
+                      <li>Active</li>
+                      <li>Movie</li>
+                    </ul>
+                    <h5><a href="#">Sen to Chihiro no Kamikakushi</a></h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg" data-setbg="@/assets/img/popular/popular-2.jpg">
+                    <div class="ep">18 / 18</div>
+                    <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                    <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                  </div>
+                  <div class="product__item__text">
+                    <ul>
+                      <li>Active</li>
+                      <li>Movie</li>
+                    </ul>
+                    <h5><a href="#">Kizumonogatari III: Reiket su-hen</a></h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg" data-setbg="@/assets/img/popular/popular-3.jpg">
+                    <div class="ep">18 / 18</div>
+                    <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                    <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                  </div>
+                  <div class="product__item__text">
+                    <ul>
+                      <li>Active</li>
+                      <li>Movie</li>
+                    </ul>
+                    <h5><a href="#">Shirogane Tamashii hen Kouhan sen</a></h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg" data-setbg="@/assets/img/popular/popular-4.jpg">
+                    <div class="ep">18 / 18</div>
+                    <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                    <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                  </div>
+                  <div class="product__item__text">
+                    <ul>
+                      <li>Active</li>
+                      <li>Movie</li>
+                    </ul>
+                    <h5><a href="#">Rurouni Kenshin: Meiji Kenkaku Romantan</a></h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg" data-setbg="@/assets/img/popular/popular-5.jpg">
+                    <div class="ep">18 / 18</div>
+                    <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                    <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                  </div>
+                  <div class="product__item__text">
+                    <ul>
+                      <li>Active</li>
+                      <li>Movie</li>
+                    </ul>
+                    <h5><a href="#">Mushishi Zoku Shou 2nd Season</a></h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg" data-setbg="@/assets/img/popular/popular-6.jpg">
+                    <div class="ep">18 / 18</div>
+                    <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                    <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                  </div>
+                  <div class="product__item__text">
+                    <ul>
+                      <li>Active</li>
+                      <li>Movie</li>
+                    </ul>
+                    <h5><a href="#">Monogatari Series: Second Season</a></h5>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-3">
-            <div class="categories__item set-bg" data-setbg="src/vendor/img/categories/cat-3.jpg">
-              <h5><a href="#">Vegetables</a></h5>
+          <div class="recent__product">
+            <div class="row">
+              <div class="col-lg-8 col-md-8 col-sm-8">
+                <div class="section-title">
+                  <h4>Recently Added Shows</h4>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="btn__all">
+                  <a href="#" class="primary-btn">View All <span class="arrow_right"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg" data-setbg="@/assets/img/recent/recent-1.jpg">
+                    <div class="ep">18 / 18</div>
+                    <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                    <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                  </div>
+                  <div class="product__item__text">
+                    <ul>
+                      <li>Active</li>
+                      <li>Movie</li>
+                    </ul>
+                    <h5><a href="#">Great Teacher Onizuka</a></h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg" data-setbg="@/assets/img/recent/recent-2.jpg">
+                    <div class="ep">18 / 18</div>
+                    <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                    <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                  </div>
+                  <div class="product__item__text">
+                    <ul>
+                      <li>Active</li>
+                      <li>Movie</li>
+                    </ul>
+                    <h5><a href="#">Fate/stay night Movie: Heaven's Feel - II. Lost</a></h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg" data-setbg="@/assets/img/recent/recent-3.jpg">
+                    <div class="ep">18 / 18</div>
+                    <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                    <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                  </div>
+                  <div class="product__item__text">
+                    <ul>
+                      <li>Active</li>
+                      <li>Movie</li>
+                    </ul>
+                    <h5><a href="#">Mushishi Zoku Shou: Suzu no Shizuku</a></h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg" data-setbg="@/assets/img/recent/recent-4.jpg">
+                    <div class="ep">18 / 18</div>
+                    <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                    <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                  </div>
+                  <div class="product__item__text">
+                    <ul>
+                      <li>Active</li>
+                      <li>Movie</li>
+                    </ul>
+                    <h5><a href="#">Fate/Zero 2nd Season</a></h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg" data-setbg="@/assets/img/recent/recent-5.jpg">
+                    <div class="ep">18 / 18</div>
+                    <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                    <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                  </div>
+                  <div class="product__item__text">
+                    <ul>
+                      <li>Active</li>
+                      <li>Movie</li>
+                    </ul>
+                    <h5><a href="#">Kizumonogatari II: Nekket su-hen</a></h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg" data-setbg="@/assets/img/recent/recent-6.jpg">
+                    <div class="ep">18 / 18</div>
+                    <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                    <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                  </div>
+                  <div class="product__item__text">
+                    <ul>
+                      <li>Active</li>
+                      <li>Movie</li>
+                    </ul>
+                    <h5><a href="#">The Seven Deadly Sins: Wrath of the Gods</a></h5>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-3">
-            <div class="categories__item set-bg" data-setbg="src/vendor/img/categories/cat-4.jpg">
-              <h5><a href="#">drink fruits</a></h5>
+          <div class="live__product">
+            <div class="row">
+              <div class="col-lg-8 col-md-8 col-sm-8">
+                <div class="section-title">
+                  <h4>Live Action</h4>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="btn__all">
+                  <a href="#" class="primary-btn">View All <span class="arrow_right"></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg" data-setbg="@/assets/img/live/live-1.jpg">
+                    <div class="ep">18 / 18</div>
+                    <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                    <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                  </div>
+                  <div class="product__item__text">
+                    <ul>
+                      <li>Active</li>
+                      <li>Movie</li>
+                    </ul>
+                    <h5><a href="#">Shouwa Genroku Rakugo Shinjuu</a></h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg" data-setbg="@/assets/img/live/live-2.jpg">
+                    <div class="ep">18 / 18</div>
+                    <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                    <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                  </div>
+                  <div class="product__item__text">
+                    <ul>
+                      <li>Active</li>
+                      <li>Movie</li>
+                    </ul>
+                    <h5><a href="#">Mushishi Zoku Shou 2nd Season</a></h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg" data-setbg="@/assets/img/live/live-3.jpg">
+                    <div class="ep">18 / 18</div>
+                    <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                    <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                  </div>
+                  <div class="product__item__text">
+                    <ul>
+                      <li>Active</li>
+                      <li>Movie</li>
+                    </ul>
+                    <h5><a href="#">Mushishi Zoku Shou: Suzu no Shizuku</a></h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg" data-setbg="@/assets/img/live/live-4.jpg">
+                    <div class="ep">18 / 18</div>
+                    <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                    <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                  </div>
+                  <div class="product__item__text">
+                    <ul>
+                      <li>Active</li>
+                      <li>Movie</li>
+                    </ul>
+                    <h5><a href="#">The Seven Deadly Sins: Wrath of the Gods</a></h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg" data-setbg="@/assets/img/live/live-5.jpg">
+                    <div class="ep">18 / 18</div>
+                    <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                    <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                  </div>
+                  <div class="product__item__text">
+                    <ul>
+                      <li>Active</li>
+                      <li>Movie</li>
+                    </ul>
+                    <h5><a href="#">Fate/stay night Movie: Heaven's Feel - II. Lost</a></h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="product__item">
+                  <div class="product__item__pic set-bg" data-setbg="@/assets/img/live/live-6.jpg">
+                    <div class="ep">18 / 18</div>
+                    <div class="comment"><i class="fa fa-comments"></i> 11</div>
+                    <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                  </div>
+                  <div class="product__item__text">
+                    <ul>
+                      <li>Active</li>
+                      <li>Movie</li>
+                    </ul>
+                    <h5><a href="#">Kizumonogatari II: Nekketsu-hen</a></h5>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-3">
-            <div class="categories__item set-bg" data-setbg="src/vendor/img/categories/cat-5.jpg">
-              <h5><a href="#">drink fruits</a></h5>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-8">
+          <div class="product__sidebar">
+            <div class="product__sidebar__view">
+              <div class="section-title">
+                <h5>Top Views</h5>
+              </div>
+              <ul class="filter__controls">
+                <li class="active" data-filter="*">Day</li>
+                <li data-filter=".week">Week</li>
+                <li data-filter=".month">Month</li>
+                <li data-filter=".years">Years</li>
+              </ul>
+              <div class="filter__gallery">
+                <div class="product__sidebar__view__item set-bg mix day years" data-setbg="@/assets/img/sidebar/tv-1.jpg">
+                  <div class="ep">18 / ?</div>
+                  <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                  <h5><a href="#">Boruto: Naruto next generations</a></h5>
+                </div>
+                <div class="product__sidebar__view__item set-bg mix month week" data-setbg="@/assets/img/sidebar/tv-2.jpg">
+                  <div class="ep">18 / ?</div>
+                  <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                  <h5><a href="#">The Seven Deadly Sins: Wrath of the Gods</a></h5>
+                </div>
+                <div class="product__sidebar__view__item set-bg mix week years" data-setbg="@/assets/img/sidebar/tv-3.jpg">
+                  <div class="ep">18 / ?</div>
+                  <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                  <h5><a href="#">Sword art online alicization war of underworld</a></h5>
+                </div>
+                <div class="product__sidebar__view__item set-bg mix years month" data-setbg="@/assets/img/sidebar/tv-4.jpg">
+                  <div class="ep">18 / ?</div>
+                  <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                  <h5><a href="#">Fate/stay night: Heaven's Feel I. presage flower</a></h5>
+                </div>
+                <div class="product__sidebar__view__item set-bg mix day" data-setbg="@/assets/img/sidebar/tv-5.jpg">
+                  <div class="ep">18 / ?</div>
+                  <div class="view"><i class="fa fa-eye"></i> 9141</div>
+                  <h5><a href="#">Fate stay night unlimited blade works</a></h5>
+                </div>
+              </div>
+            </div>
+            <div class="product__sidebar__comment">
+              <div class="section-title">
+                <h5>New Comment</h5>
+              </div>
+              <div class="product__sidebar__comment__item">
+                <div class="product__sidebar__comment__item__pic">
+                  <img src="@/assets/img/sidebar/comment-1.jpg" alt="">
+                </div>
+                <div class="product__sidebar__comment__item__text">
+                  <ul>
+                    <li>Active</li>
+                    <li>Movie</li>
+                  </ul>
+                  <h5><a href="#">The Seven Deadly Sins: Wrath of the Gods</a></h5>
+                  <span><i class="fa fa-eye"></i> 19.141 Viewes</span>
+                </div>
+              </div>
+              <div class="product__sidebar__comment__item">
+                <div class="product__sidebar__comment__item__pic">
+                  <img src="@/assets/img/sidebar/comment-2.jpg" alt="">
+                </div>
+                <div class="product__sidebar__comment__item__text">
+                  <ul>
+                    <li>Active</li>
+                    <li>Movie</li>
+                  </ul>
+                  <h5><a href="#">Shirogane Tamashii hen Kouhan sen</a></h5>
+                  <span><i class="fa fa-eye"></i> 19.141 Viewes</span>
+                </div>
+              </div>
+              <div class="product__sidebar__comment__item">
+                <div class="product__sidebar__comment__item__pic">
+                  <img src="@/assets/img/sidebar/comment-3.jpg" alt="">
+                </div>
+                <div class="product__sidebar__comment__item__text">
+                  <ul>
+                    <li>Active</li>
+                    <li>Movie</li>
+                  </ul>
+                  <h5><a href="#">Kizumonogatari III: Reiket su-hen</a></h5>
+                  <span><i class="fa fa-eye"></i> 19.141 Viewes</span>
+                </div>
+              </div>
+              <div class="product__sidebar__comment__item">
+                <div class="product__sidebar__comment__item__pic">
+                  <img src="@/assets/img/sidebar/comment-4.jpg" alt="">
+                </div>
+                <div class="product__sidebar__comment__item__text">
+                  <ul>
+                    <li>Active</li>
+                    <li>Movie</li>
+                  </ul>
+                  <h5><a href="#">Monogatari Series: Second Season</a></h5>
+                  <span><i class="fa fa-eye"></i> 19.141 Viewes</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- Categories Section End -->
+  <!-- Product Section End -->
 
-  <!-- Featured Section Begin -->
-  <section class="featured spad">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="section-title">
-            <h2>Featured Product</h2>
-          </div>
-          <div class="featured__controls">
-            <ul>
-              <li class="active" data-filter="*">All</li>
-              <li data-filter=".oranges">Oranges</li>
-              <li data-filter=".fresh-meat">Fresh Meat</li>
-              <li data-filter=".vegetables">Vegetables</li>
-              <li data-filter=".fastfood">Fastfood</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="row featured__filter">
-        <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
-          <div class="featured__item">
-            <div class="featured__item__pic set-bg" data-setbg="src/vendor/img/featured/feature-1.jpg">
-              <ul class="featured__item__pic__hover">
-                <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-              </ul>
-            </div>
-            <div class="featured__item__text">
-              <h6><a href="#">Crab Pool Security</a></h6>
-              <h5>$30.00</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fastfood">
-          <div class="featured__item">
-            <div class="featured__item__pic set-bg" data-setbg="src/vendor/img/featured/feature-2.jpg">
-              <ul class="featured__item__pic__hover">
-                <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-              </ul>
-            </div>
-            <div class="featured__item__text">
-              <h6><a href="#">Crab Pool Security</a></h6>
-              <h5>$30.00</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fresh-meat">
-          <div class="featured__item">
-            <div class="featured__item__pic set-bg" data-setbg="src/vendor/img/featured/feature-3.jpg">
-              <ul class="featured__item__pic__hover">
-                <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-              </ul>
-            </div>
-            <div class="featured__item__text">
-              <h6><a href="#">Crab Pool Security</a></h6>
-              <h5>$30.00</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood oranges">
-          <div class="featured__item">
-            <div class="featured__item__pic set-bg" data-setbg="src/vendor/img/featured/feature-4.jpg">
-              <ul class="featured__item__pic__hover">
-                <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-              </ul>
-            </div>
-            <div class="featured__item__text">
-              <h6><a href="#">Crab Pool Security</a></h6>
-              <h5>$30.00</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
-          <div class="featured__item">
-            <div class="featured__item__pic set-bg" data-setbg="src/vendor/img/featured/feature-5.jpg">
-              <ul class="featured__item__pic__hover">
-                <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-              </ul>
-            </div>
-            <div class="featured__item__text">
-              <h6><a href="#">Crab Pool Security</a></h6>
-              <h5>$30.00</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fastfood">
-          <div class="featured__item">
-            <div class="featured__item__pic set-bg" data-setbg="src/vendor/img/featured/feature-6.jpg">
-              <ul class="featured__item__pic__hover">
-                <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-              </ul>
-            </div>
-            <div class="featured__item__text">
-              <h6><a href="#">Crab Pool Security</a></h6>
-              <h5>$30.00</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
-          <div class="featured__item">
-            <div class="featured__item__pic set-bg" data-setbg="src/vendor/img/featured/feature-7.jpg">
-              <ul class="featured__item__pic__hover">
-                <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-              </ul>
-            </div>
-            <div class="featured__item__text">
-              <h6><a href="#">Crab Pool Security</a></h6>
-              <h5>$30.00</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood vegetables">
-          <div class="featured__item">
-            <div class="featured__item__pic set-bg" data-setbg="src/vendor/img/featured/feature-8.jpg">
-              <ul class="featured__item__pic__hover">
-                <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-              </ul>
-            </div>
-            <div class="featured__item__text">
-              <h6><a href="#">Crab Pool Security</a></h6>
-              <h5>$30.00</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Featured Section End -->
+  <!-- Footer Section Begin -->
+  <Footer />
+  <!-- Footer Section End -->
 
-  <!-- Banner Begin -->
-  <div class="banner">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-6">
-          <div class="banner__pic">
-            <img src="src/vendor/img/banner/banner-1.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-6">
-          <div class="banner__pic">
-            <img src="src/vendor/img/banner/banner-2.jpg" alt="">
-          </div>
-        </div>
-      </div>
+  <!-- Search model Begin -->
+  <div class="search-model">
+    <div class="h-100 d-flex align-items-center justify-content-center">
+      <div class="search-close-switch"><i class="icon_close"></i></div>
+      <form class="search-model-form">
+        <input type="text" id="search-input" placeholder="Search here.....">
+      </form>
     </div>
   </div>
-  <!-- Banner End -->
-
-  <!-- Latest Product Section Begin -->
-  <section class="latest-product spad">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <div class="latest-product__text">
-            <h4>Latest Products</h4>
-            <div class="latest-product__slider owl-carousel">
-              <div class="latest-prdouct__slider__item">
-                <a href="#" class="latest-product__item">
-                  <div class="latest-product__item__pic">
-                    <img src="src/vendor/img/latest-product/lp-1.jpg" alt="">
-                  </div>
-                  <div class="latest-product__item__text">
-                    <h6>Crab Pool Security</h6>
-                    <span>$30.00</span>
-                  </div>
-                </a>
-                <a href="#" class="latest-product__item">
-                  <div class="latest-product__item__pic">
-                    <img src="src/vendor/img/latest-product/lp-2.jpg" alt="">
-                  </div>
-                  <div class="latest-product__item__text">
-                    <h6>Crab Pool Security</h6>
-                    <span>$30.00</span>
-                  </div>
-                </a>
-                <a href="#" class="latest-product__item">
-                  <div class="latest-product__item__pic">
-                    <img src="src/vendor/img/latest-product/lp-3.jpg" alt="">
-                  </div>
-                  <div class="latest-product__item__text">
-                    <h6>Crab Pool Security</h6>
-                    <span>$30.00</span>
-                  </div>
-                </a>
-              </div>
-              <div class="latest-prdouct__slider__item">
-                <a href="#" class="latest-product__item">
-                  <div class="latest-product__item__pic">
-                    <img src="src/vendor/img/latest-product/lp-1.jpg" alt="">
-                  </div>
-                  <div class="latest-product__item__text">
-                    <h6>Crab Pool Security</h6>
-                    <span>$30.00</span>
-                  </div>
-                </a>
-                <a href="#" class="latest-product__item">
-                  <div class="latest-product__item__pic">
-                    <img src="src/vendor/img/latest-product/lp-2.jpg" alt="">
-                  </div>
-                  <div class="latest-product__item__text">
-                    <h6>Crab Pool Security</h6>
-                    <span>$30.00</span>
-                  </div>
-                </a>
-                <a href="#" class="latest-product__item">
-                  <div class="latest-product__item__pic">
-                    <img src="src/vendor/img/latest-product/lp-3.jpg" alt="">
-                  </div>
-                  <div class="latest-product__item__text">
-                    <h6>Crab Pool Security</h6>
-                    <span>$30.00</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="latest-product__text">
-            <h4>Top Rated Products</h4>
-            <div class="latest-product__slider owl-carousel">
-              <div class="latest-prdouct__slider__item">
-                <a href="#" class="latest-product__item">
-                  <div class="latest-product__item__pic">
-                    <img src="src/vendor/img/latest-product/lp-1.jpg" alt="">
-                  </div>
-                  <div class="latest-product__item__text">
-                    <h6>Crab Pool Security</h6>
-                    <span>$30.00</span>
-                  </div>
-                </a>
-                <a href="#" class="latest-product__item">
-                  <div class="latest-product__item__pic">
-                    <img src="src/vendor/img/latest-product/lp-2.jpg" alt="">
-                  </div>
-                  <div class="latest-product__item__text">
-                    <h6>Crab Pool Security</h6>
-                    <span>$30.00</span>
-                  </div>
-                </a>
-                <a href="#" class="latest-product__item">
-                  <div class="latest-product__item__pic">
-                    <img src="src/vendor/img/latest-product/lp-3.jpg" alt="">
-                  </div>
-                  <div class="latest-product__item__text">
-                    <h6>Crab Pool Security</h6>
-                    <span>$30.00</span>
-                  </div>
-                </a>
-              </div>
-              <div class="latest-prdouct__slider__item">
-                <a href="#" class="latest-product__item">
-                  <div class="latest-product__item__pic">
-                    <img src="src/vendor/img/latest-product/lp-1.jpg" alt="">
-                  </div>
-                  <div class="latest-product__item__text">
-                    <h6>Crab Pool Security</h6>
-                    <span>$30.00</span>
-                  </div>
-                </a>
-                <a href="#" class="latest-product__item">
-                  <div class="latest-product__item__pic">
-                    <img src="src/vendor/img/latest-product/lp-2.jpg" alt="">
-                  </div>
-                  <div class="latest-product__item__text">
-                    <h6>Crab Pool Security</h6>
-                    <span>$30.00</span>
-                  </div>
-                </a>
-                <a href="#" class="latest-product__item">
-                  <div class="latest-product__item__pic">
-                    <img src="src/vendor/img/latest-product/lp-3.jpg" alt="">
-                  </div>
-                  <div class="latest-product__item__text">
-                    <h6>Crab Pool Security</h6>
-                    <span>$30.00</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="latest-product__text">
-            <h4>Review Products</h4>
-            <div class="latest-product__slider owl-carousel">
-              <div class="latest-prdouct__slider__item">
-                <a href="#" class="latest-product__item">
-                  <div class="latest-product__item__pic">
-                    <img src="src/vendor/img/latest-product/lp-1.jpg" alt="">
-                  </div>
-                  <div class="latest-product__item__text">
-                    <h6>Crab Pool Security</h6>
-                    <span>$30.00</span>
-                  </div>
-                </a>
-                <a href="#" class="latest-product__item">
-                  <div class="latest-product__item__pic">
-                    <img src="src/vendor/img/latest-product/lp-2.jpg" alt="">
-                  </div>
-                  <div class="latest-product__item__text">
-                    <h6>Crab Pool Security</h6>
-                    <span>$30.00</span>
-                  </div>
-                </a>
-                <a href="#" class="latest-product__item">
-                  <div class="latest-product__item__pic">
-                    <img src="src/vendor/img/latest-product/lp-3.jpg" alt="">
-                  </div>
-                  <div class="latest-product__item__text">
-                    <h6>Crab Pool Security</h6>
-                    <span>$30.00</span>
-                  </div>
-                </a>
-              </div>
-              <div class="latest-prdouct__slider__item">
-                <a href="#" class="latest-product__item">
-                  <div class="latest-product__item__pic">
-                    <img src="src/vendor/img/latest-product/lp-1.jpg" alt="">
-                  </div>
-                  <div class="latest-product__item__text">
-                    <h6>Crab Pool Security</h6>
-                    <span>$30.00</span>
-                  </div>
-                </a>
-                <a href="#" class="latest-product__item">
-                  <div class="latest-product__item__pic">
-                    <img src="src/vendor/img/latest-product/lp-2.jpg" alt="">
-                  </div>
-                  <div class="latest-product__item__text">
-                    <h6>Crab Pool Security</h6>
-                    <span>$30.00</span>
-                  </div>
-                </a>
-                <a href="#" class="latest-product__item">
-                  <div class="latest-product__item__pic">
-                    <img src="src/vendor/img/latest-product/lp-3.jpg" alt="">
-                  </div>
-                  <div class="latest-product__item__text">
-                    <h6>Crab Pool Security</h6>
-                    <span>$30.00</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Latest Product Section End -->
-
-  <!-- Blog Section Begin -->
-  <section class="from-blog spad">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="section-title from-blog__title">
-            <h2>From The Blog</h2>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-6">
-          <div class="blog__item">
-            <div class="blog__item__pic">
-              <img src="src/vendor/img/blog/blog-1.jpg" alt="">
-            </div>
-            <div class="blog__item__text">
-              <ul>
-                <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-                <li><i class="fa fa-comment-o"></i> 5</li>
-              </ul>
-              <h5><a href="#">Cooking tips make cooking simple</a></h5>
-              <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6">
-          <div class="blog__item">
-            <div class="blog__item__pic">
-              <img src="src/vendor/img/blog/blog-2.jpg" alt="">
-            </div>
-            <div class="blog__item__text">
-              <ul>
-                <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-                <li><i class="fa fa-comment-o"></i> 5</li>
-              </ul>
-              <h5><a href="#">6 ways to prepare breakfast for 30</a></h5>
-              <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6">
-          <div class="blog__item">
-            <div class="blog__item__pic">
-              <img src="src/vendor/img/blog/blog-3.jpg" alt="">
-            </div>
-            <div class="blog__item__text">
-              <ul>
-                <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-                <li><i class="fa fa-comment-o"></i> 5</li>
-              </ul>
-              <h5><a href="#">Visit the clean farm in the US</a></h5>
-              <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Blog Section End -->
-
-  <!-- Footer Start -->
-  <Footer />
-  <!-- Footer End -->
+  <!-- Search model end -->
 
 </template>
+
+
+
