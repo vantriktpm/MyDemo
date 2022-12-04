@@ -18,17 +18,17 @@ import Footer from './components/Footer.vue'
         <div class="navbar-nav font-weight-bold mx-auto py-0">
           <RouterLink tag="li" to="/" class="nav-item nav-link" active-class="active">Home</RouterLink>
           <RouterLink to="/about" class="nav-item nav-link" active-class="active">About</RouterLink>
-          <a href="class.html" class="nav-item nav-link">Classes</a>
-          <a href="team.html" class="nav-item nav-link">Teachers</a>
-          <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+          <RouterLink to="/classes" class="nav-item nav-link" active-class="active">Classes</RouterLink>
+          <RouterLink to="/team" class="nav-item nav-link" active-class="active">Teachers</RouterLink>
+          <RouterLink to="/gallery" class="nav-item nav-link" active-class="active">Gallery</RouterLink>
           <div class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
             <div class="dropdown-menu rounded-0 m-0">
-              <a href="blog.html" class="dropdown-item">Blog Grid</a>
-              <a href="single.html" class="dropdown-item">Blog Detail</a>
+              <RouterLink to="/blog" class="dropdown-item" active-class="active">Blog Grid</RouterLink>
+              <RouterLink to="/single" class="dropdown-item" active-class="active">Blog Detail</RouterLink>
             </div>
           </div>
-          <a href="contact.html" class="nav-item nav-link">Contact</a>
+          <RouterLink to="/contact" class="nav-item nav-link" active-class="active">Contact</RouterLink>
         </div>
         <a href="" class="btn btn-primary px-4">Join Class</a>
       </div>
