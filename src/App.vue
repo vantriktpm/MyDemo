@@ -1,6 +1,14 @@
-<script setup>
+<script>
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
+import Slider from './components/Slider.vue'
+export default{
+  components:{
+    Header,
+    Footer,
+    Slider,
+  }
+}
 </script>
 
 <template>
@@ -10,56 +18,19 @@ import Footer from './components/Footer.vue'
   </div>
 
   <!-- Header Section Begin -->
-  <Header/>
+  <Header />
   <!-- Header End -->
 
   <!-- Hero Section Begin -->
   <section class="hero">
     <div class="container">
-      <div class="hero__slider owl-carousel">
-        <div class="hero__items set-bg" data-setbg="@/assets/img/hero/hero-1.jpg">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="hero__text">
-                <div class="label">Adventure</div>
-                <h2>Fate / Stay Night: Unlimited Blade Works</h2>
-                <p>After 30 days of travel across the world...</p>
-                <a href="#"><span>Watch Now</span> <i class="fa fa-angle-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="hero__items set-bg" data-setbg="@/assets/img/hero/hero-1.jpg">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="hero__text">
-                <div class="label">Adventure</div>
-                <h2>Fate / Stay Night: Unlimited Blade Works</h2>
-                <p>After 30 days of travel across the world...</p>
-                <a href="#"><span>Watch Now</span> <i class="fa fa-angle-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="hero__items set-bg" data-setbg="@/assets/img/hero/hero-1.jpg">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="hero__text">
-                <div class="label">Adventure</div>
-                <h2>Fate / Stay Night: Unlimited Blade Works</h2>
-                <p>After 30 days of travel across the world...</p>
-                <a href="#"><span>Watch Now</span> <i class="fa fa-angle-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Slider />
     </div>
   </section>
   <!-- Hero Section End -->
 
   <!-- Product Section Begin -->
-  <section class="product spad">
+  <section class="product spad" style="position: relative; top: 35em;">
     <div class="container">
       <div class="row">
         <div class="col-lg-8">
@@ -549,7 +520,7 @@ import Footer from './components/Footer.vue'
                 <li data-filter=".years">Years</li>
               </ul>
               <div class="filter__gallery">
-                <div class="product__sidebar__view__item set-bg mix day years" >
+                <div class="product__sidebar__view__item set-bg mix day years">
                   <img src="@/assets/img/sidebar/tv-1.jpg" alt="">
                   <div class="ep">18 / ?</div>
                   <div class="view"><i class="fa fa-eye"></i> 9141</div>
@@ -646,7 +617,7 @@ import Footer from './components/Footer.vue'
   <!-- Product Section End -->
 
   <!-- Footer Section Begin -->
-  <Footer/>
+  <Footer />
   <!-- Footer Section End -->
 
   <!-- Search model Begin -->
